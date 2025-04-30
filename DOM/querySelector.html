@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>querySelector</title>
+</head>
+<body>
+    <p class="mensagem">Texto aqui</p>
+
+    <div class="container">
+        <p>conteudo container</p>
+    </div>
+
+    <script>
+        const p = document.querySelector(".mensagem");
+        const conteudo = document.querySelector(".conatainer p") // retorna somente o primeiro que tenho a tag ou a chamada P
+
+        conteudo.style.backgroundColor = "red"
+
+        const paragrafos = document.querySelectorAll("p") // retorna todos os paragrafos da pagina
+
+        alert(paragrafos.length)
+
+    </script>
+
+</body>
+</html>

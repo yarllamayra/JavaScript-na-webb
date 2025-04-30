@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>procurar em listas</title>
+</head>
+<body>
+    
+    <script>
+        
+        // const pets = [
+        //     "cachorro", "gato", "hamster"]
+
+        //     alert(pets.includes("gato"))
+
+        //     // entrega true ou false
+
+        //     alert(pets.indexOf("gato"))
+
+        const alunos = ["joao", "juliana", "caio", "ana"];
+        const medias = [10, 8, 7.5, 9];
+                        // 0      1
+        const alunosMedia = [alunos, medias];
+
+        const ExibeNomeENota = function (aluno){
+            if (alunosMedia[0].includes(aluno)){
+                const indexAluno = alunosMedia[0].indexOf(aluno)
+                const nomeAluno = alunosMedia[0][indexAluno]
+                const mediaAluno = alunosMedia[1][indexAluno]
+        }else{
+            return `aluno: ${nomeAluno} | media: ${mediaAluno}`
+        }
+        }
+        alert(ExibeNomeENota("aluno"))
+
+    </script>
+
+</body>
+</html>

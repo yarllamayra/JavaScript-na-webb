@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lâmpada</title>
+</head>
+<body>
+  <img id="foto" src="imagem1.png" alt="Lâmpada">
+  <button id="btn">Acender/Apagar</button>
+
+  <script>
+    document.getElementById("btn").addEventListener("click", () => {
+      const img = document.getElementById("foto");
+      
+      if (img.getAttribute("src") === "imagem1.png") {
+        img.setAttribute("src", "imagem2.png"); // Acende
+      } else {
+        img.setAttribute("src", "imagem1.png"); // Apaga
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>funções</title>
+</head>
+<body>
+    
+    <script>
+         function exibeNomeEstudante(nome, nota){
+             alert(`o nome do aluno é ${nome} e sua nota é ${nota}`)
+         }
+         exibeNomeEstudante("sdk", 10)
+
+         function formataInforEstudante(nome, nota){
+             const info = `
+             ==============
+             Estudante: ${nome}
+             Sua nota: ${nota}
+             ==============`
+
+             return info
+         }
+         const infoEstudante = formataInforEstudante ("Yarlla" , 8.9)
+         alert(infoEstudante)
+
+
+         function calcularMedia(n1, n2, n3, n4){
+             return (n1+n2+n3+n4)/4
+         }
+
+         const calcularMedia = function(n1, n2, n3, n4){
+             return(n1, n2, n3, n4)/4
+         }
+
+         calcularMedia(3, 6, 8, 10)
+
+        // q1
+
+         const negativoOuPositivo = function (numero){
+             if (numero > 0){
+                 return "positivo"
+             }else if (numero < 0){
+                 return "negativo"
+             }else{
+                 return "zero"
+             }
+          }
+        
+          alert (negativoOuPositivo(-5))
+          alert (negativoOuPositivo(9))
+
+        // q2
+
+         const parOuImpar = (numero) => {
+             if (numero % 2 == 0){
+                 return "par"
+             } else if (numero % 2 == 1){
+                 return "impar"
+             }
+         }
+
+         alert(parOuImpar(8))
+         alert(parOuImpar(3))
+
+
+
+
+
+
+        const parOuImparOpTernario = (numero) => {
+            return numero % 2 == 0 ? "par" : "impar"
+        }
+
+        alert(parOuImparOpTernario(7))
+
+
+
+    </script>
+
+</body>
+</html>
